@@ -4,82 +4,167 @@
   <meta charset="UTF-8">
   <title>Novo Comunicación Gráfica</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
       background: #f4f4f4;
       color: #333;
     }
+
     header {
       background: #111;
-      color: #fff;
-      padding: 40px 20px;
-      text-align: center;
+      padding: 15px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     section {
-      padding: 40px 20px;
-      max-width: 1000px;
+      padding: 70px 20px;
+      max-width: 1100px;
       margin: auto;
       background: #fff;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
-    h2 {
+
+    h1, h2 {
       color: #111;
     }
-    .cta {
+
+    .hero {
+      text-align: center;
+      background: #222;
+      color: #fff;
+      padding: 100px 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .btn {
       display: inline-block;
       background: #25D366;
       color: #fff;
-      padding: 15px 25px;
+      padding: 15px 30px;
       text-decoration: none;
       font-weight: bold;
-      border-radius: 5px;
-      margin-top: 20px;
+      border-radius: 6px;
+      margin-top: 25px;
     }
+
+    ul {
+      line-height: 1.8;
+    }
+
     footer {
       background: #111;
       color: #fff;
       text-align: center;
-      padding: 20px;
+      padding: 25px;
     }
   </style>
 </head>
+
 <body>
 
 <header>
-  <h1>Novo Comunicación Gráfica</h1>
-  <p>11 años imprimiendo soluciones de alto impacto para marcas en Colombia</p>
-  <a class="cta" href="https://wa.me/57TUNUMERO">Cotizar por WhatsApp</a>
+  <nav>
+    <div><strong>Novo Comunicación Gráfica</strong></div>
+    <div>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#portafolio">Portafolio</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </nav>
 </header>
 
-<section>
+<a id="inicio"></a>
+<div class="hero">
+  <h1>Soluciones en impresión publicitaria</h1>
+  <p>
+    Más de 11 años acompañando a marcas y empresas en la producción
+    de material POP, impresión publicitaria e implementación en punto de venta
+    en todo Colombia.
+  </p>
+  <a class="btn" href="https://wa.me/573012744358" target="_blank">
+    Cotizar por WhatsApp
+  </a>
+</div>
+
+<section id="servicios">
   <h2>Servicios</h2>
   <ul>
     <li>Impresión gran formato</li>
-    <li>Material POP</li>
-    <li>Publicidad comercial</li>
-    <li>Implementación en punto de venta</li>
+    <li>Material POP y exhibidores</li>
+    <li>Publicidad para punto de venta</li>
+    <li>Implementación y montaje a nivel nacional</li>
+    <li>Producción de campañas comerciales</li>
   </ul>
 </section>
 
-<section>
-  <h2>¿Quiénes somos?</h2>
+<section id="portafolio">
+  <h2>Portafolio</h2>
   <p>
-    Somos una empresa colombiana con más de 11 años de experiencia en impresión
-    publicitaria, acompañando a marcas nacionales en la ejecución de campañas
-    visuales de alto impacto.
+    Hemos trabajado con marcas nacionales en la producción e implementación
+    de campañas publicitarias, material promocional y soluciones gráficas
+    de alto impacto.
+  </p>
+  <p>
+    (Aquí luego puedes agregar fotos de tus trabajos).
   </p>
 </section>
 
-<section>
+<section id="nosotros">
+  <h2>¿Quiénes somos?</h2>
+  <p>
+    Novo Comunicación Gráfica es una empresa colombiana con más de 11 años
+    de experiencia en impresión publicitaria. Nos especializamos en convertir
+    ideas en soluciones visuales que fortalecen la presencia de marca
+    en el punto de venta.
+  </p>
+  <p>
+    Trabajamos con empresas de consumo masivo, tecnología y retail,
+    ofreciendo cumplimiento, calidad y acompañamiento comercial.
+  </p>
+</section>
+
+<section id="contacto">
   <h2>Contacto</h2>
-  <p>📞 WhatsApp: +57 TU NÚMERO</p>
-  <p>📧 Email: tuemail@empresa.com</p>
+  <p><strong>WhatsApp:</strong> +57 301 274 4358</p>
+  <p><strong>Email:</strong> contacto@novocomunicacion.com</p>
+  <a class="btn" href="https://wa.me/573012744358" target="_blank">
+    Escríbenos por WhatsApp
+  </a>
 </section>
 
 <footer>
-  <p>© 2026 Novo Comunicación Gráfica</p>
+  <p>© 2026 Novo Comunicación Gráfica – Todos los derechos reservados</p>
 </footer>
 
 </body>
